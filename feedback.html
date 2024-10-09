@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Feedback</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Feedback Page</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="login.html">Login</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <section>
+        <form action="#">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+                <br>
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <a id="backLink" href="#">Back</a> <!-- This is where the vulnerability is -->
+    </section>
+
+    <footer>
+        <p>Website by Yubi</p>
+    </footer>
+</body>
+</html>

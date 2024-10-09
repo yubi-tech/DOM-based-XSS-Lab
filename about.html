@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>About the Cybersecurity Challenge</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="login.html">Login</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>About the Lab</h2>
+        <p>This cybersecurity lab is designed to enhance your understanding of web application vulnerabilities. It focuses on practical, hands-on learning, enabling you to identify and exploit common security flaws.</p>
+
+        <h2>Objectives</h2>
+        <ul>
+            <li>To familiarize participants with common web vulnerabilities.</li>
+            <li>To provide a safe environment for practicing penetration testing techniques.</li>
+            <li>To encourage ethical hacking and responsible disclosure of security issues.</li>
+        </ul>
+
+        <h2>How to Solve the Lab: DOM XSS Challenge</h2>
+        <p>In this lab, you will encounter a DOM-based Cross-Site Scripting (XSS) vulnerability in the feedback page. Follow these steps to solve the challenge:</p>
+        
+        <h3>Steps to Solve the Lab</h3>
+        <ol>
+            <li>Navigate to the <strong>Submit Feedback</strong> page.</li>
+            <li>Observe the query parameter in the URL. It will look something like this: <code>?returnPath=/home</code>.</li>
+            <li>Right-click on the page and select <strong>Inspect</strong> or press <strong>Ctrl+Shift+I</strong> to open the developer tools.</li>
+            <li>Locate the anchor element on the page. You can use the <code>$</code> selector in the console to find it.</li>
+            <li>Modify the query parameter <code>returnPath</code> to <code>/randomString</code> (replace <code>randomString</code> with any alphanumeric string).</li>
+            <li>Change the <code>returnPath</code> value to <code>javascript:alert(document.cookie)</code>.</li>
+            <li>Press <strong>Enter</strong> and click the <strong>back</strong> link to trigger the alert.</li>
+        </ol>
+        <p>Once you successfully execute the above steps, you will see an alert displaying the cookies, confirming that you have exploited the DOM XSS vulnerability!</p>
+
+        <h2>Join Us in Strengthening Cybersecurity</h2>
+        <p>We believe that education is key to improving online security. By participating in this lab, you are taking a step towards becoming a more skilled and responsible cybersecurity professional.</p>
+    </section>
+
+    <footer>
+        <p>Website by Yubi</p>
+    </footer>
+</body>
+</html>

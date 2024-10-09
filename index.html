@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Cybersecurity Challenge</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="login.html">Login</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>This is the home page of our website. Explore the pages and find the hidden bugs!</p>
+
+        <h2>About This Challenge</h2>
+        <p>Welcome to our interactive cybersecurity lab designed to help you sharpen your skills in finding vulnerabilities! Here, you'll encounter real-world scenarios that allow you to practice various techniques, including SQL injection, DOM-based XSS, and CSRF attacks.</p>
+        
+        <h2>What You'll Learn</h2>
+        <ul>
+            <li>Identifying and exploiting common web vulnerabilities.</li>
+            <li>Understanding the implications of security flaws.</li>
+            <li>Applying best practices for secure coding.</li>
+        </ul>
+
+        <h2>How to Get Started</h2>
+        <p>Start by navigating to the different pages and look for hidden vulnerabilities. Once you discover a vulnerability, follow the hints provided to exploit it and reveal the flags!</p>
+        
+        <h2>Challenge Highlights</h2>
+        <p>Each page in this lab has been crafted to simulate a real-world application. Pay close attention to the feedback page, where you can test your skills with a DOM-based XSS vulnerability!</p>
+
+        <h2>Flag Submission</h2>
+        <form id="flagForm" onsubmit="return checkFlag(event)">
+            <label for="flagInput">Enter Flag:</label>
+            <input type="text" id="flagInput" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="congratsMessage" class="hidden">Congratulations! You've found the flag!</p>
+    </section>
+
+    <footer>
+        <p>Website by Yubi</p>
+    </footer>
+</body>
+</html>
