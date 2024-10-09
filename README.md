@@ -1,4 +1,4 @@
-# Web Hack Odyssey: DOM-based XSS Lab
+# vulnerabilityvoyage: DOM-based XSS Lab
 
 ## Overview
 
